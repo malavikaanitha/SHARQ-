@@ -6,8 +6,16 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {backgroundColor: {
+    extend: {
+      backgroundColor: {
       'red': 'rgb(254,15,15)',
+    }, screens: {
+      lg: { max: '1800px' },
+      md: { max: '990px' },
+      sm: { max: '600px' },
+      xs: { max: '400px' },
+      minmd: '1700px',
+      minlg: '2100px',
     },
     linearGradientColors: {
       'red-black-purple': ['rgb(254,15,15)', 'rgba(0,0,0,1)', 'rgba(27,18,131,1)'],
