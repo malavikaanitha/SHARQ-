@@ -5,10 +5,17 @@ import { Carousel } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function MyComponent(props) {
   const router=useRouter()
   return (
+    <div >
+    <Head>
+        <title>Sharq Al Hirah Tech. Cont</title>
+        <meta name="description" content="construction" />
+        <link rel="icon" href="/fav.png" />
+      </Head>
     <div className=" bg-white flex flex-col  w-full sm:w-full sm:m-0">
       <div className="z-[1] flex items-stretch  justify-between gap-5 mt-1.5 w-full self-start sm:flex-wrap">
         <div className="   items-start flex gap-5 mt-1 w-full h-full   self-start">
@@ -134,16 +141,16 @@ export default function MyComponent(props) {
             />
           </div>
           
-          {/* <div className="flex flex-col items-stretch  ml-5 max-md:w-full max-md:ml-0">
+          <div className="flex flex-col items-stretch  ml-5 max-md:w-full max-md:ml-0">
             <Image
               loading="lazy"
-              src="/logo_1 (1).png"
+              src="/ebs-logo.png"
               width={200}
               height={50}
               alt="log"
               className="aspect-[1.07] object-contain object-center overflow-hidden shrink-0 max-w-full grow max-md:mt-10"
             />
-          </div> */}
+          </div>
         </div>
       </div>
       <motion.div className="self-center w-full mt-16 pl-4 pr-3.5 pb-12 max-md:max-w-full max-md:mt-10"
@@ -161,7 +168,7 @@ export default function MyComponent(props) {
                 <br /> on
               </div>
               <div className="text-white text-lg  font-medium  whitespace-nowrap  mt-20  max-md:mt-10">
-              <p className="bg-violet-950 rounded-md w-max px-5  py-5 md:py-1">Contact US</p>
+              <Link href="/SHARQALHIRAHTECHCONT.pdf" download="SHARQALHIRAHTECHCONT.pdf" className="bg-violet-950 rounded-md w-max px-5  py-5 md:py-1">Contact US</Link>
             </div>
             </div>
           </div>
@@ -205,8 +212,8 @@ export default function MyComponent(props) {
         </div>
       </motion.div>
       <div className="h-fit font-popinsbld bg-red-black-purple z-10 self-stretch flex w-full  flex-col pl-5 pr-5 py-12 max-md:max-w-full  ">
-        <div className="text-white z-[-1] text-4xl sm:text-xl md:text-2xl font-medium   max-md:max-w-full">
-          PROJECTS
+        <div className="text-white uppercase z-[-1] text-4xl sm:text-xl md:text-2xl font-medium   max-md:max-w-full">
+        major projects
         </div>
         <div className="bg-violet-950 flex w-1/4 shrink-0 h-1.5 flex-col mt-5 rounded-lg self-start max-md:max-w-full max-md:mt-10" />
         <div className="self-stretch mt-10 max-md:max-w-full max-md:mt-10">
@@ -286,7 +293,7 @@ export default function MyComponent(props) {
                 <div className="flex-col text-white text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px] pl-5 pt-80 max-md:max-w-full max-md:pt-10">
                   <Image
                     loading="lazy"
-                    src="/5.jpg"
+                    src="/5.png"
                     width={2000}
                     height={50}
                     alt="log"
@@ -309,7 +316,7 @@ export default function MyComponent(props) {
                     alt="log"
                     className="absolute z-[-1] h-full w-full object-cover object-center inset-0"
                   />
-                  <p className="bg-red rounded-tl-md p-2">Dhaid poultry farm, Sharjah</p>
+                  <p className="bg-red  rounded-tl-md p-2">Dhaid poultry farm, Sharjah</p>
                 </div>
               </div>
             </motion.div>
@@ -343,7 +350,8 @@ export default function MyComponent(props) {
         <div className="w-1/4 self-center items-center rounded-xl mt-3 gap-5 p-1 bg-red-black-purple flex flex-col justify-center ">
          <Link href='https://instagram.com/sharqtechnical?utm_source=qr'><FaInstagram size={30}  className="hover:text-blue-200 hover:shadow text-white"/></Link>
          <Link href='https://www.linkedin.com/company/sharqtechnical/'><FaLinkedin size={30}  className="hover:text-blue-200 hover:shadow text-white"/></Link>
-         <Link href=""><FaWhatsapp size={30}  className="hover:text-blue-200 hover:shadow text-white shadow-2xl shadow-white"/></Link>
+         <Link href="">
+         <FaWhatsapp size={30}  className="hover:text-blue-200 hover:shadow text-white shadow-2xl shadow-white"/></Link>
         </div>
         </div>
           <div className="flex flex-col items-stretch leading-[30px]  max-md:w-full max-md:ml-0">
@@ -408,6 +416,7 @@ export default function MyComponent(props) {
           Privacy Policy | Terms and Conditions
         </div>
       </div>
+    </div>
     </div>
   );
 }
