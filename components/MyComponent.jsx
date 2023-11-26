@@ -149,7 +149,7 @@ export default function MyComponent(props) {
       <motion.div className="self-center w-full mt-16 pl-4 pr-3.5 pb-12 max-md:max-w-full max-md:mt-10"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.3 }}
     >        <div className="gap-5 flex max-md:flex-col-1 max-md:items-stretch max-md:gap-0">
           <div className="flex flex-col items-stretch w-[34%] max-md:w-full max-md:ml-0">
             <div className="flex flex-col mt-7 max-md:mt-10">
@@ -211,7 +211,9 @@ export default function MyComponent(props) {
         <div className="bg-violet-950 flex w-1/4 shrink-0 h-1.5 flex-col mt-5 rounded-lg self-start max-md:max-w-full max-md:mt-10" />
         <div className="self-stretch mt-10 max-md:max-w-full max-md:mt-10">
           <div className=" grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1 gap-2   max-md:gap-0">
-          <div className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
+          <motion.div animate={{ x: 2 }}
+             whileHover={{ scale: 1.06, }}
+            transition={{ type: "spring", stiffness: 20, damping: 10 }} className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
               <div className="justify-end items-stretch flex grow flex-col max-md:max-w-full max-md:mt-10">
                 <div className="flex-col text-white text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px] pl-5 pt-80 max-md:max-w-full max-md:pt-10">
                   <Image
@@ -225,8 +227,10 @@ export default function MyComponent(props) {
                   <p className="bg-red rounded-tl-md p-2">Danube, Al barsha Dubai</p>
                 </div>
               </div>
-            </div>
-            <div className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
+            </motion.div>
+            <motion.div animate={{ x: 2 }}
+             whileHover={{ scale: 1.06, }}
+            transition={{ type: "spring", stiffness: 20, damping: 10 }} className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
               <div className="justify-end items-stretch flex grow flex-col max-md:max-w-full max-md:mt-10">
                 <div className="flex-col text-white text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px] pl-5 pt-80 max-md:max-w-full max-md:pt-10">
                   <Image
@@ -240,8 +244,10 @@ export default function MyComponent(props) {
                   <p className="bg-red rounded-tl-md p-2">Radison hotel, Ajman</p>
                 </div>
               </div>
-            </div>
-            <div className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
+            </motion.div>
+            <motion.div animate={{ x: 2 }}
+             whileHover={{ scale: 1.06, }}
+            transition={{ type: "spring", stiffness: 20, damping: 10 }} className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
               <div className="justify-end items-stretch flex grow flex-col max-md:max-w-full max-md:mt-10">
                 <div className="flex-col text-white text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px] pl-5 pt-80 max-md:max-w-full max-md:pt-10">
                   <Image
@@ -255,8 +261,10 @@ export default function MyComponent(props) {
                   <p className="bg-red rounded-tl-md p-2">Stable at khawaneej, Dubai</p>
                 </div>
               </div>
-            </div>
-            <div className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
+            </motion.div>
+            <motion.div animate={{ x: 2 }}
+             whileHover={{ scale: 1.06, }}
+            transition={{ type: "spring", stiffness: 20, damping: 10 }} className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
               <div className="justify-end items-stretch flex grow flex-col max-md:max-w-full max-md:mt-10">
                 <div className="flex-col text-white text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px] pl-5 pt-80 max-md:max-w-full max-md:pt-10">
                   <Image
@@ -270,8 +278,10 @@ export default function MyComponent(props) {
                   <p className="bg-red rounded-tl-md p-2">Open shed (EBS), Dubai</p>
                 </div>
               </div>
-            </div>
-            <div className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
+            </motion.div>
+            <motion.div animate={{ x: 2 }}
+             whileHover={{ scale: 1.06, }}
+            transition={{ type: "spring", stiffness: 20, damping: 10 }} className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
               <div className="justify-end items-stretch flex grow flex-col max-md:max-w-full max-md:mt-10">
                 <div className="flex-col text-white text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px] pl-5 pt-80 max-md:max-w-full max-md:pt-10">
                   <Image
@@ -285,8 +295,10 @@ export default function MyComponent(props) {
                   <p className="bg-red rounded-tl-md p-2">Farouj Al wadi poultry farm ,Sharjah</p>
                 </div>
               </div>
-            </div>
-            <div className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
+            </motion.div>
+            <motion.div animate={{ x: 2 }}
+             whileHover={{ scale: 1.06, }}
+            transition={{ type: "spring", stiffness: 20, damping: 10 }} className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
               <div className="justify-end items-stretch flex grow flex-col max-md:max-w-full max-md:mt-10">
                 <div className="flex-col text-white text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px] pl-5 pt-80 max-md:max-w-full max-md:pt-10">
                   <Image
@@ -300,7 +312,7 @@ export default function MyComponent(props) {
                   <p className="bg-red rounded-tl-md p-2">Dhaid poultry farm, Sharjah</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
            
           </div>
         </div>
@@ -328,7 +340,7 @@ export default function MyComponent(props) {
             </div>
           </div>
           <div className="flex justify-center">
-        <div className="w-1/4 self-center items-center rounded-xl mt-3 gap-5  bg-red-black-purple flex flex-col justify-center ">
+        <div className="w-1/4 self-center items-center rounded-xl mt-3 gap-5 p-1 bg-red-black-purple flex flex-col justify-center ">
          <Link href='https://instagram.com/sharqtechnical?utm_source=qr'><FaInstagram size={30}  className="hover:text-blue-200 hover:shadow text-white"/></Link>
          <Link href='https://www.linkedin.com/company/sharqtechnical/'><FaLinkedin size={30}  className="hover:text-blue-200 hover:shadow text-white"/></Link>
          <Link href=""><FaWhatsapp size={30}  className="hover:text-blue-200 hover:shadow text-white shadow-2xl shadow-white"/></Link>
