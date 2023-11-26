@@ -2,6 +2,7 @@ import Image from "next/image";
 import * as React from "react";
 import { FaLinkedin,FaFacebook} from "react-icons/fa";
 import { Carousel } from "@material-tailwind/react";
+import { motion } from "framer-motion";
 
 export default function MyComponent(props) {
   return (
@@ -60,7 +61,7 @@ export default function MyComponent(props) {
             loading="lazy"
             src="/herobag.jpg"
             width={2000}
-            height={50}
+            height={500}
             alt="log"
             className="absolute  h-full w-full object-cover opacity-20 object-center inset-0"
           />
@@ -68,7 +69,7 @@ export default function MyComponent(props) {
             <div className=" grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5   max-md:items-stretch max-md:gap-0">
               <div className="flex flex-col items-stretch max-md:w-full max-md:ml-0">
                 <div className="items-stretch self-stretch relative flex grow flex-col max-md:max-w-full max-md:mt-10">
-                  <div className=" text-6xl md:text-3xl sm:  text-white font-bold leading-[54px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
+                  <div className=" text-6xl md:text-3xl font-  text-white font-bold leading-[54px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
                     10 years of experience in Steel Warehouse construction and
                     Poultry Farm projects
                   </div>
@@ -103,7 +104,7 @@ export default function MyComponent(props) {
           </div>
         </div>
       </div>
-      <div className="text-zinc-900 text-opacity-80 text-center text-4xl font-medium leading-6 tracking-wider self-center whitespace-nowrap mt-9">
+      <div className="text-zinc-900 text-opacity-80 font-popinsmd text-center text-4xl font-medium leading-6 tracking-wider self-center whitespace-nowrap mt-9">
         Trusted By
       </div>
       <div className="self-center w-full flex justify-center max-w-full mt-10 px-5 max-md:mt-10">
@@ -150,8 +151,11 @@ export default function MyComponent(props) {
           </div> */}
         </div>
       </div>
-      <div className="self-center w-full  mt-16 pl-4 pr-3.5 pb-12 max-md:max-w-full max-md:mt-10">
-        <div className="gap-5 flex max-md:flex-col-1 max-md:items-stretch max-md:gap-0">
+      <motion.div className="self-center w-full mt-16 pl-4 pr-3.5 pb-12 max-md:max-w-full max-md:mt-10"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >        <div className="gap-5 flex max-md:flex-col-1 max-md:items-stretch max-md:gap-0">
           <div className="flex flex-col items-stretch w-[34%] max-md:w-full max-md:ml-0">
             <div className="flex flex-col mt-7 max-md:mt-10">
               <div className="text-4xl font-semibold leading-6 tracking-[2.1px] bg-clip-text self-stretch whitespace-nowrap">
@@ -179,7 +183,7 @@ export default function MyComponent(props) {
                       alt="log"
                       className="aspect-[1.89] object-contain object-center  w-full overflow-hidden"
                     />
-                    <div className="text-violet-950 text-2xl sm:text-sm font-semibold leading-9 mt-2">
+                    <div className="text-violet-950 font- text-2xl sm:text-sm font-semibold leading-9 mt-2">
                       Poultry farm projects
                       <br />
                     </div>
@@ -204,8 +208,8 @@ export default function MyComponent(props) {
             </div>
           </div>
         </div>
-      </div>
-      <div className="h-fit bg-red-black-purple z-10 self-stretch flex w-full  flex-col pl-5 pr-5 py-12 max-md:max-w-full  ">
+      </motion.div>
+      <div className="h-fit font-popinsbld bg-red-black-purple z-10 self-stretch flex w-full  flex-col pl-5 pr-5 py-12 max-md:max-w-full  ">
         <div className="text-white z-[-1] text-4xl sm:text-xl md:text-2xl font-medium   max-md:max-w-full">
           PROJECTS
         </div>
@@ -309,7 +313,7 @@ export default function MyComponent(props) {
         
         
       </div>
-      <div className="text-base font-semibold sm:text-xs leading-2 tracking-[2.4px] uppercase bg-clip-text self-center whitespace-nowrap mt-20 max-md:mt-10">
+      <div className="text-base font-popinsbld sm:text-xs leading-2 tracking-[2.4px] uppercase bg-clip-text self-center whitespace-nowrap mt-20 max-md:mt-10">
         Have you project in mind?
       </div>
       <div className="text-neutral-900 text-center text-2xl font-semibold leading-[81px] self-center max-w-[668px] mt-14 max-md:max-w-full max-md:text-4xl max-md:leading-[60px] max-md:mt-10">
@@ -317,7 +321,7 @@ export default function MyComponent(props) {
         <br />
         Great Together!
       </div>
-      <div className=" self-center w-full max-w-[1350px] mt-28 px-5 max-md:max-w-full max-md:mt-10">
+      <div className=" self-center font-popinsmd w-full max-w-[1350px] mt-28 px-5 max-md:max-w-full max-md:mt-10">
         <div className="gap-5 grid grid-cols-3 sm:grid-cols-1 max-md:grid-col max-md:items-stretch max-md:gap-0">
           <div className="flex  flex-col  items-stretch  max-md:w-full max-md:ml-0">
             <div className="  text-black sm:text-lg self-center text-xl font-medium leading-[60px] max-md:max-w-full max-md:mt-10">

@@ -9,6 +9,12 @@ module.exports = {
     extend: {
       backgroundColor: {
       'red': 'rgb(254,15,15)',
+    }, fontFamily: {
+      popinsblk:['Poppins-black'],
+      popinsbld:['Poppins-bold'],
+      popinsmd:['Poppins-Medium'],
+      popinsxtrabld:['Poppins-extrabld'],
+      popinstin:['Poppins-thin'],
     }, screens: {
       lg: { max: '1800px' },
       md: { max: '990px' },
