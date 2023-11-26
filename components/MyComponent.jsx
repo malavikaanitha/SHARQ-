@@ -1,12 +1,15 @@
 import Image from "next/image";
 import * as React from "react";
-import { FaLinkedin,FaFacebook} from "react-icons/fa";
+import { FaLinkedin,FaFacebook,FaInstagram,FaWhatsapp} from "react-icons/fa";
 import { Carousel } from "@material-tailwind/react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function MyComponent(props) {
+  const router=useRouter()
   return (
-    <div className=" bg-white flex flex-col  w-full sm:w-screen sm:m-0">
+    <div className=" bg-white flex flex-col  w-full sm:w-full sm:m-0">
       <div className="z-[1] flex items-stretch  justify-between gap-5 mt-1.5 w-full self-start sm:flex-wrap">
         <div className="   items-start flex gap-5 mt-1 w-full h-full   self-start">
           <div className="flex w-1/2 ">
@@ -23,14 +26,14 @@ export default function MyComponent(props) {
             <div className="flex h-full justify-self  items-center  sm:hidden float-right">
               <Image
                 loading="lazy"
-                src="/location.png"
+                src="/loc.png"
                 width={200}
                 height={50}
                 alt="log"
                 className="aspect-[0.85] object-contain object-center 
-                w-[17px] overflow-hidden self-center shrink-0 max-w-full my-auto"
+                w-6 overflow-hidden self-center shrink-0 max-w-full my-auto"
               />
-              <div className="text-black text-xs font-medium leading-4 self-stretch grow shrink basis-auto ">
+              <div className="text-black pl-2 text-xs font-medium leading-4 self-stretch grow shrink basis-auto ">
                 SHARQ AL HIRAH TECH. <br />
                 CONT Muweilah commercial, Sharjah, UAE <br />
                 PO BOX:- 61189
@@ -41,14 +44,15 @@ export default function MyComponent(props) {
               <div className="flex ">
                 <Image
                   loading="lazy"
-                  src="/call.png"
+                  src="/cal.png"
                   width={200}
                   height={50}
                   alt="log"
-                  className="aspect-[0.94]  object-contain  object-center w-4 overflow-hidden self-center shrink-0 max-w-full my-auto"
+                  className="aspect-[0.94]  object-contain  object-center w-6 overflow-hidden self-center shrink-0 max-w-full my-auto"
                 />
-                <p className="text-black text-center w-full text-xs font-medium leading-6 self-center my-auto">
-                  +97165357381
+                 <p className="text-black font-bold p-2">TEL</p>
+                <p className="text-black text-center w-full md:text-xs text-base font-medium leading-6 self-center my-auto">
+                   +97165357381
                 </p>
               </div>
             </div>
@@ -89,14 +93,14 @@ export default function MyComponent(props) {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col items-stretch rounded-full  ml-5 max-md:w-full max-md:ml-0">
+              <div className="flex flex-col items-stretch   ml-5 max-md:w-full max-md:ml-0">
                 <Image
                   loading="lazy"
                   src="/hero.jpg"
                   width={1000}
                   height={500}
                   alt="log"
-                  className="aspect-[1.46] object-contain object-center rounded-3xl w-full overflow-hidden my-auto max-md:max-w-full max-md:mt-10"
+                  className="aspect-[1.46] object-fit object-center rounded-3xl w-full overflow-hidden my-auto max-md:max-w-full max-md:mt-10"
                 />
                 
               </div>
@@ -129,16 +133,7 @@ export default function MyComponent(props) {
               className="aspect-[3.33] object-contain object-center  overflow-hidden grow mt-12 max-md:mt-10"
             />
           </div>
-          <div className="flex flex-col items-stretch  ml-5 max-md:w-full max-md:ml-0">
-            <Image
-              loading="lazy"
-              src="/logo_1 (1).png"
-              width={200}
-              height={50}
-              alt="log"
-              className="aspect-[1.07] object-contain object-center overflow-hidden shrink-0 max-w-full grow max-md:mt-10"
-            />
-          </div>
+          
           {/* <div className="flex flex-col items-stretch  ml-5 max-md:w-full max-md:ml-0">
             <Image
               loading="lazy"
@@ -165,8 +160,8 @@ export default function MyComponent(props) {
                 We have Expertise
                 <br /> on
               </div>
-              <div className="text-white text-lg md:text-xs font-medium  whitespace-nowrap  bg-red rounded-md w-[153px] max-w-full mt-20 px-5 md:px-1 py-5 md:py-1 max-md:mt-10">
-              Contact US
+              <div className="text-white text-lg  font-medium  whitespace-nowrap  mt-20  max-md:mt-10">
+              <p className="bg-violet-950 rounded-md w-max px-5  py-5 md:py-1">Contact US</p>
             </div>
             </div>
           </div>
@@ -216,48 +211,48 @@ export default function MyComponent(props) {
         <div className="bg-violet-950 flex w-1/4 shrink-0 h-1.5 flex-col mt-5 rounded-lg self-start max-md:max-w-full max-md:mt-10" />
         <div className="self-stretch mt-10 max-md:max-w-full max-md:mt-10">
           <div className=" grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1 gap-2   max-md:gap-0">
-            <div className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
+          <div className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
               <div className="justify-end items-stretch flex grow flex-col max-md:max-w-full max-md:mt-10">
-                <div className="flex-col text-white text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px]  pt-80 max-md:max-w-full max-md:pr-2.5 max-md:pt-10">
+                <div className="flex-col text-white text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px] pl-5 pt-80 max-md:max-w-full max-md:pt-10">
                   <Image
                     loading="lazy"
                     src="/1.jpg"
-                    width={300}
+                    width={2000}
                     height={50}
                     alt="log"
                     className="absolute z-[-1] h-full w-full object-cover object-center inset-0"
                   />
-                   <p className="bg-red rounded-tl-md p-5">Danube, Al barsha Dubai</p>
+                  <p className="bg-red rounded-tl-md p-2">Danube, Al barsha Dubai</p>
                 </div>
               </div>
             </div>
             <div className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
               <div className="justify-end items-stretch flex grow flex-col max-md:max-w-full max-md:mt-10">
-                <div className="flex-col text-white text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px]  pt-80 max-md:max-w-full max-md:pr-2.5 max-md:pt-10">
+                <div className="flex-col text-white text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px] pl-5 pt-80 max-md:max-w-full max-md:pt-10">
                   <Image
                     loading="lazy"
                     src="/2.jpg"
-                    width={300}
+                    width={2000}
                     height={50}
                     alt="log"
                     className="absolute z-[-1] h-full w-full object-cover object-center inset-0"
                   />
-                   <p className="bg-red rounded-tl-md p-5">Radison hotel, Ajman</p>
+                  <p className="bg-red rounded-tl-md p-2">Radison hotel, Ajman</p>
                 </div>
               </div>
             </div>
             <div className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
               <div className="justify-end items-stretch flex grow flex-col max-md:max-w-full max-md:mt-10">
-                <div className="flex-col text-white text-Xxl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px] pl-5 pt-80 max-md:max-w-full max-md:pt-10">
+                <div className="flex-col text-white text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px] pl-5 pt-80 max-md:max-w-full max-md:pt-10">
                   <Image
                     loading="lazy"
                     src="/3.jpg"
-                    width={200}
+                    width={2000}
                     height={50}
                     alt="log"
                     className="absolute z-[-1] h-full w-full object-cover object-center inset-0"
                   />
-                   <p className="bg-red rounded-tl-md p-5">Stable at khawaneej, Dubai</p>
+                  <p className="bg-red rounded-tl-md p-2">Stable at khawaneej, Dubai</p>
                 </div>
               </div>
             </div>
@@ -267,7 +262,7 @@ export default function MyComponent(props) {
                   <Image
                     loading="lazy"
                     src="/4.jpg"
-                    width={200}
+                    width={2000}
                     height={50}
                     alt="log"
                     className="absolute z-[-1] h-full w-full object-cover object-center inset-0"
@@ -276,38 +271,37 @@ export default function MyComponent(props) {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-stretch  max-md:w-full max-md:ml-0">
+            <div className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
               <div className="justify-end items-stretch flex grow flex-col max-md:max-w-full max-md:mt-10">
-                <div className=" text-white  text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px] items-center pl-10 pr-5 pt-80 max-md:max-w-full max-md:pt-10">
+                <div className="flex-col text-white text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px] pl-5 pt-80 max-md:max-w-full max-md:pt-10">
                   <Image
                     loading="lazy"
                     src="/5.jpg"
-                    width={200}
+                    width={2000}
                     height={50}
                     alt="log"
                     className="absolute z-[-1] h-full w-full object-cover object-center inset-0"
                   />
-                 <p className="bg-red rounded-tl-md  p-2 "> Farouj Al wadi poultry farm ,Sharjah</p>
+                  <p className="bg-red rounded-tl-md p-2">Farouj Al wadi poultry farm ,Sharjah</p>
                 </div>
-                <div className="text-white "> 
-                 </div>
               </div>
             </div>
             <div className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
               <div className="justify-end items-stretch flex grow flex-col max-md:max-w-full max-md:mt-10">
-                <div className="flex-col text-white text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px]  pt-80 max-md:max-w-full max-md:pr-2.5 max-md:pt-10">
+                <div className="flex-col text-white text-xl font-semibold leading-10 relative w-full max-w-full overflow-hidden min-h-[370px] pl-5 pt-80 max-md:max-w-full max-md:pt-10">
                   <Image
                     loading="lazy"
                     src="/6.jpg"
-                    width={300}
+                    width={2000}
                     height={50}
                     alt="log"
                     className="absolute z-[-1] h-full w-full object-cover object-center inset-0"
                   />
-                   <p className="bg-red rounded-tl-md  p-2 ">Dhaid poultry farm, Sharjah</p>
+                  <p className="bg-red rounded-tl-md p-2">Dhaid poultry farm, Sharjah</p>
                 </div>
               </div>
             </div>
+           
           </div>
         </div>
         
@@ -316,17 +310,16 @@ export default function MyComponent(props) {
       <div className="text-base font-popinsbld sm:text-xs leading-2 tracking-[2.4px] uppercase bg-clip-text self-center whitespace-nowrap mt-20 max-md:mt-10">
         Have you project in mind?
       </div>
-      <div className="text-neutral-900 text-center text-2xl font-semibold leading-[81px] self-center max-w-[668px] mt-14 max-md:max-w-full max-md:text-4xl max-md:leading-[60px] max-md:mt-10">
+      <div className="text-neutral-900 text-center text-2xl font-semibold  self-center max-w-[668px] mt-14 max-md:max-w-full max-md:text-4xl max-md:leading-[60px] max-md:mt-10">
         Let’s Make Something
         <br />
         Great Together!
       </div>
-      <div className=" self-center font-popinsmd w-full max-w-[1350px] mt-28 px-5 max-md:max-w-full max-md:mt-10">
-        <div className="gap-5 grid grid-cols-3 sm:grid-cols-1 max-md:grid-col max-md:items-stretch max-md:gap-0">
+      <div className=" self-center font-popinsmd w-full max-w-[1350px] mt-20 px-5 max-md:max-w-full max-md:mt-10">
+        <div className=" w-full self-center  gap-5 grid grid-cols-3 sm:grid-cols-1 max-md:grid-col max-md:items-stretch max-md:gap-0">
           <div className="flex  flex-col  items-stretch  max-md:w-full max-md:ml-0">
-            <div className="  text-black sm:text-lg self-center text-xl font-medium leading-[60px] max-md:max-w-full max-md:mt-10">
+            <div className="  text-black sm:text-lg self-center text-xl font-medium leading-[30px] max-md:max-w-full max-md:mt-10">
               <p className="text-blue-800 font-bold text-3xl">Location</p>
-              <br />
               SHARQ AL HIRAH TECH. CONT <br />
               Muweilah commercial, Sharjah, UAE
               <br />
@@ -334,20 +327,22 @@ export default function MyComponent(props) {
               <br />
             </div>
           </div>
-          <div className="flex flex-col   justify-center items-center w-full h-1/2   rounded-full max-md:w-full max-md:ml-0">
-            <div className="text-white flex justify-center text-base font-bold w-full bg-red leading-6 p-5   mx-auto  rounded-sm  max-md:pl-2.5 ">
-              CONTACT WITH US
-            </div>
-          </div>
-          <div className="flex flex-col items-stretch   max-md:w-full max-md:ml-0">
+          <div className="flex justify-center">
+        <div className="w-1/4 self-center items-center rounded-xl mt-3 gap-5  bg-red-black-purple flex flex-col justify-center ">
+         <Link href='https://instagram.com/sharqtechnical?utm_source=qr'><FaInstagram size={30}  className="hover:text-blue-200 hover:shadow text-white"/></Link>
+         <Link href='https://www.linkedin.com/company/sharqtechnical/'><FaLinkedin size={30}  className="hover:text-blue-200 hover:shadow text-white"/></Link>
+         <Link href=""><FaWhatsapp size={30}  className="hover:text-blue-200 hover:shadow text-white shadow-2xl shadow-white"/></Link>
+        </div>
+        </div>
+          <div className="flex flex-col items-stretch leading-[30px]  max-md:w-full max-md:ml-0">
             <div className="text-black self-center text-xl font-medium sm:text-lg leading-[60px] max-md:max-w-full ">
-            <div>
+            <div className="leading-[30px]">
             <p className="text-blue-800 font-bold text-3xl">Telephone</p>
               
               +971 65357381
               <br />
               </div>
-              <div className="grid grid-cols-1">
+              <div className="grid grid-cols-1 leading-[30px]">
 
               <p className="text-blue-800 font-bold text-3xl">Mobile</p>
               
@@ -360,10 +355,7 @@ export default function MyComponent(props) {
             </div>
           </div>
         </div>
-        <div className="w-full mt-3 gap-5 flex justify-center ">
-         <FaFacebook size={30} color="red"/>
-         <FaLinkedin size={30} color="red"/>
-        </div>
+       
       </div>
       <Image
                     loading="lazy"
