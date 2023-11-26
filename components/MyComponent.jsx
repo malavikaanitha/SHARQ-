@@ -1,7 +1,8 @@
 import Image from "next/image";
 import * as React from "react";
-import { FaLinkedin,FaFacebook,FaInstagram,FaWhatsapp} from "react-icons/fa";
+import { FaLinkedin,FaFacebook,FaInstagram,FaWhatsapp,FaMailBulk, FaMailchimp} from "react-icons/fa";
 import { Carousel } from "@material-tailwind/react";
+import { IoIosMail } from "react-icons/io";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Link from "next/link";
@@ -120,7 +121,7 @@ export default function MyComponent(props) {
       </div>
       <div className="self-center w-full flex justify-center max-w-full mt-10 px-5 max-md:mt-10">
         <div className="gap-5 grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 justify-center items-center max-md:flex-col max-md:items-stretch max-md:gap-0">
-          <div className="flex flex-col items-stretch  max-md:w-full max-md:ml-0">
+          <div className="flex h-full justify-center items-center   max-md:w-full max-md:ml-0">
             <Image
               loading="lazy"
               src="/Lae.png"
@@ -130,7 +131,7 @@ export default function MyComponent(props) {
               className="aspect-[2.84] object-contain object-center  overflow-hidden shrink-0 max-w-full grow mt-20 max-md:mt-10"
             />
           </div>
-          <div className="flex flex-col items-stretch ml-5 max-md:w-full max-md:ml-0">
+          <div className="flex h-full justify-center items-center  ml-5 max-md:w-full max-md:ml-0">
             <Image
               loading="lazy"
               src="/cropped-IFFCO-logo-new.png"
@@ -141,7 +142,7 @@ export default function MyComponent(props) {
             />
           </div>
           
-          <div className="flex justify-end flex-col items-stretch   ml-5 max-md:w-full max-md:ml-0">
+          <div className="flex justify-center items-center  h-full   ml-5 max-md:w-full max-md:ml-0">
             <Image
               loading="lazy"
               src="/dab.png"
@@ -354,6 +355,7 @@ export default function MyComponent(props) {
          <FaWhatsapp size={30}  className="hover:text-blue-200 hover:shadow text-white shadow-2xl shadow-white"/></Link>
         </div>
         </div>
+        
           <div className="flex flex-col items-stretch leading-[30px]  max-md:w-full max-md:ml-0">
             <div className="text-black self-center text-xl font-medium sm:text-lg leading-[60px] max-md:max-w-full ">
             <div className="leading-[30px]">
@@ -377,6 +379,8 @@ export default function MyComponent(props) {
         </div>
        
       </div>
+      <div className="w-full justify-center items-center flex"><IoIosMail size={30} /> <p className="text-xl sm:text-base font-popinsbld">contact@sharqalhirah.com</p>
+</div>
       <Image
                     loading="lazy"
                     src="/LOGO.png"
