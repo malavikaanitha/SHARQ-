@@ -141,10 +141,10 @@ export default function MyComponent(props) {
             />
           </div>
           
-          <div className="flex flex-col items-stretch  ml-5 max-md:w-full max-md:ml-0">
+          <div className="flex justify-end flex-col items-stretch   ml-5 max-md:w-full max-md:ml-0">
             <Image
               loading="lazy"
-              src="/ebs-logo.png"
+              src="/dab.png"
               width={200}
               height={50}
               alt="log"
@@ -179,7 +179,7 @@ export default function MyComponent(props) {
                   <div className="flex grow flex-col  items-stretch mt-40 max-md:mt-10">
                     <Image
                       loading="lazy"
-                      src="/5.jpg"
+                      src="/5.png"
                       width={500}
                       height={50}
                       alt="log"
