@@ -373,6 +373,20 @@ export default function MyComponent(props) {
                     alt="log"
         className="aspect-[2.37] object-contain object-center w-[327px] overflow-hidden self-center z-[1] mt-0 max-w-full"
       />
+      <div className="inset-0 bg-gray-300">
+        <iframe
+          width="100%"
+          height="600"
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
+          title="map"
+          loading="lazy"
+          scrolling="no"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.118296576261!2d55.44451187536333!3d25.300229277644778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5fa35c722a89%3A0xeb597a9a9a5da67!2sSharq%20Al%20Hirah%20Tech.%20Cont!5e0!3m2!1sen!2sin!4v1700976962319!5m2!1sen!2sin" ></iframe>
+      </div>
+
        {/* <Image
                     loading="lazy"
                     src="/6.jpg"
@@ -381,7 +395,7 @@ export default function MyComponent(props) {
                     alt="log"
         className="aspect-[6.53] object-contain object-center w-[209px] overflow-hidden self-center max-w-full mt-16 max-md:mt-10"
       /> */}
-      <div className="bg-zinc-400 self-stretch flex min-h-[2px] w-full flex-col mt-36 max-md:max-w-full max-md:mt-10" />
+      <div className="bg-zinc-400 self-stretch flex min-h-[2px] w-full flex-col  max-md:max-w-full max-md:mt-10" />
       <div className="self-center flex w-full max-w-[1140px] items-stretch justify-between gap-5 mt-14 mb-11 px-5 max-md:max-w-full max-md:flex-wrap max-md:my-10">
         <div className="text-neutral-700 text-lg font-medium leading-7 grow shrink basis-auto max-md:max-w-full">
           © 2023 SHARQ AL HIRAH Inc. All Rights Reserved
