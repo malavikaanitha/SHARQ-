@@ -17,7 +17,7 @@ export default function MyComponent(props) {
         <meta name="description" content="construction" />
         <link rel="icon" href="/fav.png" />
       </Head>
-    <div className=" bg-white flex flex-col  w-full sm:w-full sm:m-0">
+    <div className=" font-thin bg-white flex flex-col  w-full sm:w-full sm:m-0">
       <div className="z-[1] flex items-stretch  justify-between gap-5 mt-1.5 w-full self-start sm:flex-wrap">
         <div className="   items-start flex gap-5 mt-1 w-full h-full   self-start">
           <div className="flex w-1/2 ">
@@ -317,7 +317,8 @@ export default function MyComponent(props) {
                     alt="log"
                     className="absolute z-[-1] h-full w-full object-cover object-center inset-0"
                   />
-                  <p className="bg-red  rounded-tl-md p-2">Dhaid poultry farm, Sharjah</p>
+                  
+                  <div className=" bg-blue-800 shadow-xl pt-2  rounded-tl-xl  pl-2"><p className="bg-red  rounded-tl-md p-2">Dhaid poultry farm, Sharjah</p></div>
                 </div>
               </div>
             </motion.div>
@@ -328,7 +329,7 @@ export default function MyComponent(props) {
         
       </div>
       <div className="text-base font-popinsbld sm:text-xs leading-2 tracking-[2.4px] uppercase bg-clip-text self-center whitespace-nowrap mt-20 max-md:mt-10">
-        Have you project in mind?
+        Have your project in mind?
       </div>
       <div className="text-neutral-900 text-center text-2xl font-semibold  self-center max-w-[668px] mt-14 max-md:max-w-full max-md:text-4xl max-md:leading-[60px] max-md:mt-10">
         Let’s Make Something
@@ -351,7 +352,7 @@ export default function MyComponent(props) {
         <div className="w-1/4 self-center items-center rounded-xl mt-3 gap-5 p-1 bg-red-black-purple flex flex-col justify-center ">
          <Link href='https://instagram.com/sharqtechnical?utm_source=qr'><FaInstagram size={30}  className="hover:text-blue-200 hover:shadow text-white"/></Link>
          <Link href='https://www.linkedin.com/company/sharqtechnical/'><FaLinkedin size={30}  className="hover:text-blue-200 hover:shadow text-white"/></Link>
-         <Link href="">
+         <Link href="https://wa.me/message/B2MFIGSEJYQCG1">
          <FaWhatsapp size={30}  className="hover:text-blue-200 hover:shadow text-white shadow-2xl shadow-white"/></Link>
         </div>
         </div>
@@ -379,7 +380,7 @@ export default function MyComponent(props) {
         </div>
        
       </div>
-      <div className="w-full justify-center items-center flex"><IoIosMail size={30} /> <p className="text-xl sm:text-base font-popinsbld">contact@sharqalhirah.com</p>
+      <div className="w-full justify-center items-center flex"><IoIosMail size={30} /> <p className="text-xl sm:text-base font-popinsbld">info@sharqalhirah.com</p>
 </div>
       <Image
                     loading="lazy"
