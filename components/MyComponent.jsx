@@ -318,7 +318,9 @@ export default function MyComponent(props) {
                     className="absolute z-[-1] h-full w-full object-cover object-center inset-0"
                   />
                   
-                  <div className=" bg-blue-800 shadow-xl pt-2  rounded-tl-xl  pl-2"><p className="bg-red  rounded-tl-md p-2">Dhaid poultry farm, Sharjah</p></div>
+                  {/* <div className=" bg-blue-800 shadow-xl pt-2  rounded-tl-xl  pl-2"> */}
+                  <p className="bg-red  rounded-tl-md p-2">Dhaid poultry farm, Sharjah</p>
+                  {/* </div> */}
                 </div>
               </div>
             </motion.div>
