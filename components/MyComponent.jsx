@@ -331,7 +331,7 @@ export default function MyComponent(props) {
         
       </div>
       <div className="text-base font-popinsbld sm:text-xs leading-2 tracking-[2.4px] uppercase bg-clip-text self-center whitespace-nowrap mt-20 max-md:mt-10">
-        Have your project in mind?
+        Have new project in mind?
       </div>
       <div className="text-neutral-900 text-center text-2xl font-semibold  self-center max-w-[668px] mt-14 max-md:max-w-full max-md:text-4xl max-md:leading-[60px] max-md:mt-10">
         Let’s Make Something
