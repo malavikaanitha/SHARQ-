@@ -169,7 +169,7 @@ export default function MyComponent(props) {
                 <br /> on
               </div>
               <div className="text-white text-lg  font-medium  bg-violet-950  rounded-md flex justify-center  mt-20 max-md:mt-10">
-              <Link href="/SHARQALHIRAHTECHCONT.pdf" download="SHARQALHIRAHTECHCONT.pdf" className="md:text-sm   whitespace-normal  px-5 sm:py-2  py-5 md:py-1">Download our company profile</Link>
+              <Link href="/SHARQALHIRAHTECHCONT.pdf" download="SHARQALHIRAHTECHCONT.pdf" className="md:text-sm   whitespace-normal  px-5 sm:py-2  py-5 md:py-1">Download our brochure</Link>
             </div>
            
             </div>
